@@ -159,6 +159,90 @@ $(document).ready(function(){
 });
 </script> // when the mouse Enter of the id #p1, there will be an alert 
 
+Mouse Leave 
+<script>
+$(document).ready(function(){
+  $("#p1").mouseleave(function(){
+    alert("Bye! You now leave p1!");
+  });
+});
+</script>
+
+Mouse Down 
+<script>
+$(document).ready(function(){
+  $("#p1").mousedown(function(){
+    alert("Mouse down over p1!");
+  });
+});
+</script>
+
+Mouse Up
+<script>
+$(document).ready(function(){
+  $("#p1").mouseup(function(){
+    alert("Mouse up over p1!");
+  });
+});
+</script>
+
+Hover 
+<script>
+$(document).ready(function(){
+  $("#p1").hover(function(){
+    alert("You entered p1!");
+  },
+  function(){
+    alert("Bye! You now leave p1!");
+  }); 
+});
+</script>
+
+Focus 
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+});
+</script>
+
+
+ON (Attaches one or more event handlers to the element)
+<script>
+$(document).ready(function(){
+  $("p").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }  
+  });
+});
+</script>
+
+JQUERY EFFECTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
