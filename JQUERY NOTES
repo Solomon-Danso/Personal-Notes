@@ -54,6 +54,149 @@ $(document).ready(function(){
 });
 </script> //button will hide 
 
+Selects all <p> elements with class="intro"
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p.intro").hide();
+  });
+});
+</script>
+
+Selects the first <p> element
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p:first").hide();
+  });
+});
+</script>
+
+Selects the first <li> element of the first <ul>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("ul li:first").hide();
+  });
+});
+</script>
+
+Selects the first <li> element of every <ul>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("ul li:first-child").hide();
+  });
+});
+</script>
+
+Selects all elements with an href attribute
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("[href]").hide();
+  });
+});
+</script>
+
+Selects all <a> elements with a target attribute value equal to "_blank"
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("a[target='_blank']").hide();
+  });
+});
+</script>
+
+Selects all <a> elements with a target attribute value NOT equal to "_blank"
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("a[target!='_blank']").hide();
+  });
+});
+</script>
+
+Selects all <button> elements and <input> elements of type="button"
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(":button").hide();
+  });
+});
+</script>
+
+Selects all even <tr> elements
+<script>
+$(document).ready(function(){
+  $("tr:even").css("background-color", "yellow");
+});
+</script>
+
+Selects all odd <tr> elements
+<script>
+$(document).ready(function(){
+  $("tr:odd").css("background-color", "yellow");
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
