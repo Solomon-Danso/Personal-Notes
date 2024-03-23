@@ -140,6 +140,27 @@ $(document).ready(function(){
 });
 </script>
 
+EVENTS
+Double click 
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script> //when a user doubleclick the selected p paragraph will disappear 
+
+Mouse Enter
+<script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("You entered p1!");
+  });
+});
+</script> // when the mouse Enter of the id #p1, there will be an alert 
+
+
+
 
 
 
